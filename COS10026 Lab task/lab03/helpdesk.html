@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang = "en">
+<head>
+ <meta charset="utf-8">
+ <meta name = "description" content = "Creating Web Application" />
+ <meta name = "keywords" content = "HTML, CSS, Javascript" />
+ <meta name = "author" content = "Nguyen Nam Tung" />
+<title>lab03</title>
+</head>
+
+<body>
+	<a href = "http://www.swin.edu.au/">
+	<img src = "logo.png" alt = "swinburne logo">
+	</a>
+<h1>CWA Help Desk Appointment</h1>
+<p>The help desk is located in ATC620. Open 10:30 to 19:30 Monday to Friday
+	</p>
+<p>Check Blackboard for when CWA tutor will be there
+	</p>
+<form id = "survey" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+	<fieldset>
+		<legend>Student details</legend>
+		<p><label for = "studentid">Student ID</label>
+		<input type="text" name="studentid" id="studentid"  maxlength = "10" required = "required" pattern=".{7,}"/></p>
+	<label for = "givenname">Given name</label>
+	<input type = "text" name = "givenname" id = "givenname" maxlength = "15" required = "required" pattern = "^[A-Za-z]+$"/>
+	<label for ="familyname" >Family Name</label>
+	<input type = "text" name = "familyname" id = "familyname" maxlenth = "15" required = "required" pattern = "^[A-Za-z]+$"/>
+		</fieldset>
+ <fieldset>
+	 <legend>Your unit</legend>
+	 <p><label><input type = "radio" name = "unit" value = "cos10011" checked = "checked" required = "required"/>COS10011</label>
+	 <label><input type = "radio" name = "unit" value = "cos60004"/>COS60004</label>
+		 <label><input type = "radio" name = "unit" value = "cos60007"/>COS60007</label></p>
+	 <p><label for="rank">Your tutor</label>
+<select name="rank" id="rank">
+<option value="" selected="selected">Please Select</option>
+<option value="Jenny">Jenny</option>
+<option value="Richard">Richard</option>
+<option value="Emily">Emily</option>
+<option value="Lai">Lai</option>
+</select>
+</p>
+	 
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 </fieldset>
+<fieldset>
+	<legend>Issue</legend>
+	<label><input type = "checkbox"  name = "issue[]" name = "html" checked = "checked"/>HTML</label>
+	<label><input type = "checkbox"  name = "issue[]" name = "css"/>CSS</label>
+	<label><input type = "checkbox"  name = "issue[]" name = "javascript"/>JavaScript</label>
+	<label><input type = "checkbox"  name = "issue[]" name = "php"/>PHP</label>
+	<label><input type = "checkbox"  name = "issue[]" name = "mysql"/>MySQL</label>
+	<p><label>Description of Issues<br />
+<textarea name="comments" 
+rows="4" cols="20">
+Write description of your problem here...
+ 
+</textarea>
+</label></p>
+</fieldset>
+	<fieldset>
+		<legend>Preferred Date /Time</legend>
+		<label for "Date">Date</label>
+		<input type = "date" id = "Date" name = "Date" /><br>
+		<label for "Time">Time</label>
+		<input type = "time" id = "Time" name = "Time" />
+	</fieldset>
+	<p>
+<input type="submit" value="Book"/>
+<input type="reset" value="Reset form"/>
+</p>
+	
+	
+
+	
+	
+	
+	
+	
+	</form>
+</body>
+</html>
